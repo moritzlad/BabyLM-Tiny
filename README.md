@@ -1,5 +1,5 @@
 # BabyLM-Tiny
-A small version of BabyLM. The dataset has been reduced to 1M words, and the evaluation is exclusively on BLiMP and the faster tasks in (Super)GLUE.
+A small version of the [BabyLM Challenge](https://babylm.github.io/). The dataset has been reduced to 1M words, and the evaluation is exclusively on BLiMP and the faster tasks in (Super)GLUE.
 
 
 
