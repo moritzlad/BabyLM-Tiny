@@ -1,17 +1,17 @@
 # BabyLM-Tiny
-A small version of BabyLM for Bachelor projects.
+A small version of BabyLM. The dataset has been reduced to 1M words, and the evaluation is exclusively on BLiMP and the faster tasks in (Super)GLUE.
 
 
 
 
-### Usage
+## Usage
 
-##### main.ipynb
+### main.ipynb
 A template for you to fill in. Contains preprocessing code for the dataset to help you get started.
 
 
 
-##### evaluate_blimp.py
+### evaluate_blimp.py
 Evaluates an encoder or decoder model on BLiMP. Only evaluates some test models (BERT-tiny and Tiny-GPT2), so you will have to adjust the code to evaluate your own model.
 
 To run, call:
@@ -24,7 +24,7 @@ python evaluate_blimp.py \
 The batch size will not affect the results, it can be raised or lowered based on GPU RAM.
 
 
-##### evaluate_glue.py
+### evaluate_glue.py
 Evaluates an encoder or decoder model on GLUE. Only evaluates some test models (BERT-tiny and Tiny-GPT2), so you will have to adjust the code to evaluate your own model.
 
 To run, call:
