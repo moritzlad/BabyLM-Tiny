@@ -161,7 +161,7 @@ def main():
         # load dataset and tokenize
         dataset = datasets.load_dataset('nyu-mll/blimp', subset)
         dataset = dataset.map(tokenize_fn, batched=True, num_proc=4, remove_columns=dataset['train'].column_names) # map works with functions that return a dictionary
-        dataloader = torch.utils.data.DataLoader(dataset['train'], batch_size=args.batch_size, shuffle=True, collate_fn=padding_collate_fn)
+        dataloader = torch.utils.data.DataLoader(dataset['train'], batch_size=args.batch_size, shuffle=False, collate_fn=padding_collate_fn)
         result = evaluate_fn(model, dataloader, tokenizer)
         results[subset] = result
 
